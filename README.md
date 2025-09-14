@@ -15,6 +15,11 @@ A Model Context Protocol (MCP) server that provides live and forecast traffic da
 - **Flexible Location Input**: Supports both addresses and latitude/longitude coordinates
 - **Multiple Travel Modes**: Driving, walking, bicycling, and transit options
 
+## 🚀 Planned Features
+[] Search places so you can just say "Apple Store, Bengaluru" and it'll get the correct location
+[] Access Saved places on Google Maps. Requires a setup to get and store user's oauth tokens.
+[] Access Live Location. 
+
 ## 🛠️ Setup Instructions
 
 ### 1. Prerequisites
@@ -111,6 +116,20 @@ Here are some example automations you can create:
 - **Trigger**: Significant traffic delay detected
 - **Action**: Notify with alternative routes
 - **Integration**: Connect with calendar for rescheduling
+
+## 📝 Example Usage with Poke 🌴
+Ask Poke to remember your favourite places like:
+- "Remember 323 Merlin Dr California as my Home"
+- "Remember Apple Park, Cupertino as my Work"
+
+Ask Poke to remember your routine and set automation to use Traffic Boy like:
+- "I leave to work on weekdays at 9 AM, be sure to check for traffic at that time"
+- "I go to the gym at 6 PM from work at weekdays, and at 5 PM on weekends directly from home, be sure to check for traffic at that time"
+
+<img width="1595" height="165" alt="image" src="https://github.com/user-attachments/assets/a406c142-fffa-4e73-b778-025011f200e9" />
+
+
+
 
 ## 📝 Example Usage
 
