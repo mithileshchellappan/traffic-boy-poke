@@ -1,6 +1,11 @@
-# 🚗 Traffic Boy MCP Server
+<div align="center">
+  <img width="120" height="120" alt="image" src="https://github.com/user-attachments/assets/d71712ba-cd3f-42a1-84b2-34f5e07aa3ba" />
+  <h1><b>Traffic Boy - Poke MCP Server</b></h1>
+  <p><em>Building my First Ever MCP Server <a href="https://x.com/notagodzilla/status/1967201612407153011">in under 3 hours</a> for the <a href="https://poke.com"> Poke MCP Challenge</a>.</em></p>
+</div>
 
-A Model Context Protocol (MCP) server that provides live and forecast traffic data using Google Maps API. Perfect for the HackMIT Poke Challenge!
+
+A Model Context Protocol (MCP) server that provides live and forecast traffic data using Google Maps API.
 
 ## ✨ Features
 
@@ -107,14 +112,6 @@ Here are some example automations you can create:
 - **Action**: Notify with alternative routes
 - **Integration**: Connect with calendar for rescheduling
 
-## 🏆 HackMIT Challenge Categories
-
-This project is well-suited for multiple prize categories:
-
-- **Most Technically Impressive**: Complex Google Maps API integration with MCP
-- **Most Practical**: Real-world traffic monitoring solution
-- **Most Fun**: Creative traffic-aware automation ideas
-
 ## 📝 Example Usage
 
 ```javascript
@@ -178,8 +175,6 @@ Feel free to enhance this MCP server with:
 
 ## 📄 License
 
-MIT License - feel free to use for the HackMIT challenge and beyond!
+MIT License
 
 ---
-
-Built with ❤️ for the HackMIT Poke Challenge. Happy hacking! 🚀
