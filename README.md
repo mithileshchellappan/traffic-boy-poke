@@ -16,9 +16,9 @@ A Model Context Protocol (MCP) server that provides live and forecast traffic da
 - **Multiple Travel Modes**: Driving, walking, bicycling, and transit options
 
 ## 🚀 Planned Features
-[] Search places so you can just say "Apple Store, Bengaluru" and it'll get the correct location
-[] Access Saved places on Google Maps. Requires a setup to get and store user's oauth tokens.
-[] Access Live Location. 
+- [ ] Search places so you can just say "Apple Store, Bengaluru" and it'll get the correct location
+- [ ] Access Saved places on Google Maps. Requires a setup to get and store user's oauth tokens.
+- [ ] Access Live Location. 
 
 ## 🛠️ Setup Instructions
 
@@ -126,7 +126,8 @@ Ask Poke to remember your routine and set automation to use Traffic Boy like:
 - "I leave to work on weekdays at 9 AM, be sure to check for traffic at that time"
 - "I go to the gym at 6 PM from work at weekdays, and at 5 PM on weekends directly from home, be sure to check for traffic at that time"
 
-<img width="1595" height="165" alt="image" src="https://github.com/user-attachments/assets/a406c142-fffa-4e73-b778-025011f200e9" />
+<img width="1585" height="413" alt="image" src="https://github.com/user-attachments/assets/866f69fb-19a9-4613-ad27-e79e0f36bba7" />
+
 
 
 
