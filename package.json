@@ -1,0 +1,32 @@
+{
+  "name": "traffic-boy-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for getting live and forecast traffic data using Google Maps API",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "http": "node src/server.js http 3333",
+    "test": "node test-server.js"
+  },
+  "keywords": [
+    "mcp",
+    "traffic",
+    "google-maps",
+    "hackmit",
+    "poke"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.3.40",
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "name": "Traffic Boy MCP Server",
+  "description": "Get live and forecast traffic data between any two locations using Google Maps",
+  "version": "1.0.0",
+  "mcpServer": {
+    "command": "node",
+    "args": ["src/server.js"],
+    "env": {
+      "GOOGLE_MAPS_API_KEY": "${GOOGLE_MAPS_API_KEY}"
+    }
+  },
+  "tools": [
+    {
+      "name": "get_live_traffic",
+      "description": "Get current traffic conditions and travel time",
+      "example": {
+        "origin": "Times Square, New York, NY",
+        "destination": "JFK Airport, New York, NY",
+        "mode": "driving"
+      }
+    },
+    {
+      "name": "get_forecast_traffic",
+      "description": "Get forecasted traffic for future travel",
+      "example": {
+        "origin": "40.7589,-73.9851",
+        "destination": "40.6413,-73.7781",
+        "departure_time": "2024-01-15T08:00:00Z"
+      }
+    },
+    {
+      "name": "get_traffic_comparison",
+      "description": "Compare current vs future traffic conditions",
+      "example": {
+        "origin": "Boston, MA",
+        "destination": "Providence, RI",
+        "forecast_hours": 2
+      }
+    }
+  ],
+  "automations": [
+    {
+      "name": "Morning Commute Check",
+      "description": "Daily check of commute traffic",
+      "trigger": "schedule",
+      "trigger_config": {
+        "time": "07:30",
+        "days": ["monday", "tuesday", "wednesday", "thursday", "friday"]
+      },
+      "actions": [
+        {
+          "tool": "get_live_traffic",
+          "params": {
+            "origin": "Your Home Address",
+            "destination": "Your Work Address"
+          }
+        },
+        {
+          "notification": "Send summary to email/slack"
+        }
+      ]
+    },
+    {
+      "name": "Smart Departure Reminder",
+      "description": "Remind based on traffic conditions",
+      "trigger": "calendar_event",
+      "trigger_config": {
+        "minutes_before": 30
+      },
+      "actions": [
+        {
+          "tool": "get_traffic_comparison",
+          "params": {
+            "origin": "Current Location",
+            "destination": "Event Location",
+            "forecast_hours": 1
+          }
+        },
+        {
+          "condition": "if traffic worse than normal",
+          "action": "send early reminder"
+        }
+      ]
+    }
+  ]
+}
